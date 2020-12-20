@@ -5,22 +5,23 @@
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 
     body {
+        background: linear-gradient(#0e8044, #D48CF8,#85E582,);
         .sectionMain {
-            background-color: #212121;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             .cardMain {
-                background-color: #63c000;
-                width: 30em;
-                height: 20em;
+                background-color: #D48CF8;
+                min-width: 30em;
+                min-height: 20em;
                 text-align: center;
-                box-shadow: inset -3px -3px 7px #09df37, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+                box-shadow: inset -3px -3px 7px #08302F, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
                 border-radius: 1.2em;
                 .title {
                     padding: 0.5em;
                     text-transform: uppercase;
+                    color: #08302F;
                 }
                 .title::after {
                     content: "";
@@ -28,7 +29,7 @@
                     width: 15em;
                     height: 0.5em;
                     margin: 0 auto;
-                    border-bottom: 1px solid #212121;
+                    border-bottom: 1px solid #08302F;
                 }
                 @media (max-width: 767px) {
                     .title::after {
@@ -36,41 +37,47 @@
                     }
                 }
             }
+            @media (max-width: 767px) {
+                .cardMain {
+                    min-width: 20em;
+                }
+            }
 
             .ulMain {
-                display: flex;
                 list-style: none;
-                justify-content: center;
-                align-items: baseline;
             }
             .inputForm {
-                background-color: #51900e;
-                color: white;
+                color: #08302F;
                 padding: 0.5em;
                 width: 15em;
                 border-radius: 1.2em;
                 outline: none;
-                border-color: #212121;
+                border-color: #08302F;
+              
             }
             .btnForm {
                 padding: 0.5em;
-                background-color: #212121;
+                background-color: #08302F;
                 color: white;
                 border-radius: 0.5em;
                 cursor: pointer;
+                border-color: #212121;
+                box-shadow: inset -3px -3px 7px #08302F, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+                outline: none;
             }
-            .inputAc {
-                width: 25em;
+            .elementActive {
+                width: 21em;
                 padding: 1.5em;
-                margin-top: 1em;
-                background-color: #51900e;
+                margin: 20px auto;
+                background-color: #08302F;
+                box-shadow: inset -3px -3px 7px #212121, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
                 color: white;
                 outline: none;
                 border: none;
                 border-radius: 0.5em;
             }
             @media (max-width: 767px) {
-                .inputAc {
+                .elementActive {
                     width: 14em !important;
                 }
             }
@@ -79,12 +86,13 @@
             position: fixed;
             top: 34.5em;
             left: 2em;
-            color: #63c000;
+            color: #08302F;
         }
 
         @media (max-width: 767px) {
             .footerMain {
                 top: 1.5em !important;
+                min-width: 21em;
             }
         }
     }
