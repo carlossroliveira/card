@@ -1,3 +1,6 @@
+import elementConcluir from '../javascript/concluirTarefa.js';
+import elementDelete from '../javascript/deletaTarefa.js';
+
 function selecaoDoInput(evento) {
 
     evento.preventDefault();
@@ -7,18 +10,28 @@ function selecaoDoInput(evento) {
     const valor = elementInput.value;
 
     const elementLi = document.createElement('li');
-          elementLi.classList.add('elementActive');
+    elementLi.classList.add('elementActive');
 
     const elementP = `<p>${valor}</p>`;
 
     elementLi.innerHTML = elementP;
+    elementLi.appendChild(elementConcluir());
+    elementLi.appendChild(elementDelete());
     elementUl.appendChild(elementLi);
-         
+
     elementInput.value = '';
 }
 
 const elementBtn = document.querySelector('[data-form-btn]');
 
 elementBtn.addEventListener('click', selecaoDoInput);
+
+
+
+
+
+
+
+
 
 

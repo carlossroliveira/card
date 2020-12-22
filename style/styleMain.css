@@ -7,8 +7,8 @@
 }
 
 * body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#0e8044), color-stop(#D48CF8), to(#85E582));
-  background: linear-gradient(#0e8044, #D48CF8, #85E582);
+  background: -webkit-gradient(linear, left top, left bottom, from(#0e8044), color-stop(#d48cf8), to(#85e582));
+  background: linear-gradient(#0e8044, #d48cf8, #85e582);
 }
 
 * body .sectionMain {
@@ -25,19 +25,19 @@
 }
 
 * body .sectionMain .cardMain {
-  background-color: #D48CF8;
+  background-color: #d48cf8;
   min-width: 30em;
   min-height: 20em;
   text-align: center;
-  -webkit-box-shadow: inset -3px -3px 7px #08302F, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
-          box-shadow: inset -3px -3px 7px #08302F, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+  -webkit-box-shadow: inset -3px -3px 7px #08302f, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+          box-shadow: inset -3px -3px 7px #08302f, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
   border-radius: 1.2em;
 }
 
 * body .sectionMain .cardMain .title {
   padding: 0.5em;
   text-transform: uppercase;
-  color: #08302F;
+  color: #08302f;
 }
 
 * body .sectionMain .cardMain .title::after {
@@ -46,7 +46,7 @@
   width: 15em;
   height: 0.5em;
   margin: 0 auto;
-  border-bottom: 1px solid #08302F;
+  border-bottom: 1px solid #08302f;
 }
 
 @media (max-width: 767px) {
@@ -66,23 +66,23 @@
 }
 
 * body .sectionMain .inputForm {
-  color: #08302F;
+  color: #08302f;
   padding: 0.5em;
   width: 15em;
   border-radius: 1.2em;
   outline: none;
-  border-color: #08302F;
+  border-color: #08302f;
 }
 
 * body .sectionMain .btnForm {
   padding: 0.5em;
-  background-color: #08302F;
+  background-color: #08302f;
   color: white;
   border-radius: 0.5em;
   cursor: pointer;
   border-color: #212121;
-  -webkit-box-shadow: inset -3px -3px 7px #08302F, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
-          box-shadow: inset -3px -3px 7px #08302F, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+  -webkit-box-shadow: inset -3px -3px 7px #08302f, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+          box-shadow: inset -3px -3px 7px #08302f, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
   outline: none;
 }
 
@@ -90,7 +90,7 @@
   width: 21em;
   padding: 1.5em;
   margin: 20px auto;
-  background-color: #08302F;
+  background-color: #08302f;
   -webkit-box-shadow: inset -3px -3px 7px #212121, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
           box-shadow: inset -3px -3px 7px #212121, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
   color: white;
@@ -109,7 +109,7 @@
   position: fixed;
   top: 34.5em;
   left: 2em;
-  color: #08302F;
+  color: #08302f;
 }
 
 @media (max-width: 767px) {
@@ -117,5 +117,13 @@
     top: 1.5em !important;
     min-width: 21em;
   }
+}
+
+* body .done {
+  text-decoration: line-through;
+}
+
+* body .done .btnForm {
+  background-color: gray;
 }
 /*# sourceMappingURL=styleMain.css.map */

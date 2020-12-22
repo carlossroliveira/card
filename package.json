@@ -1,7 +1,7 @@
 {
   "name": "card",
   "version": "1.0.0",
-  "description": "card main",
+  "description": "Card main",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +12,7 @@
   },
   "author": "Carlos Oliveira",
   "license": "ISC",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/carlossroliveira/card/issues"
   },

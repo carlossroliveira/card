@@ -5,23 +5,23 @@
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 
     body {
-        background: linear-gradient(#0e8044, #D48CF8,#85E582,);
+        background: linear-gradient(#0e8044, #d48cf8, #85e582);
         .sectionMain {
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             .cardMain {
-                background-color: #D48CF8;
+                background-color: #d48cf8;
                 min-width: 30em;
                 min-height: 20em;
                 text-align: center;
-                box-shadow: inset -3px -3px 7px #08302F, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+                box-shadow: inset -3px -3px 7px #08302f, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
                 border-radius: 1.2em;
                 .title {
                     padding: 0.5em;
                     text-transform: uppercase;
-                    color: #08302F;
+                    color: #08302f;
                 }
                 .title::after {
                     content: "";
@@ -29,7 +29,7 @@
                     width: 15em;
                     height: 0.5em;
                     margin: 0 auto;
-                    border-bottom: 1px solid #08302F;
+                    border-bottom: 1px solid #08302f;
                 }
                 @media (max-width: 767px) {
                     .title::after {
@@ -47,29 +47,28 @@
                 list-style: none;
             }
             .inputForm {
-                color: #08302F;
+                color: #08302f;
                 padding: 0.5em;
                 width: 15em;
                 border-radius: 1.2em;
                 outline: none;
-                border-color: #08302F;
-              
+                border-color: #08302f;
             }
             .btnForm {
                 padding: 0.5em;
-                background-color: #08302F;
+                background-color: #08302f;
                 color: white;
                 border-radius: 0.5em;
                 cursor: pointer;
                 border-color: #212121;
-                box-shadow: inset -3px -3px 7px #08302F, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+                box-shadow: inset -3px -3px 7px #08302f, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
                 outline: none;
             }
             .elementActive {
                 width: 21em;
                 padding: 1.5em;
                 margin: 20px auto;
-                background-color: #08302F;
+                background-color: #08302f;
                 box-shadow: inset -3px -3px 7px #212121, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
                 color: white;
                 outline: none;
@@ -86,13 +85,20 @@
             position: fixed;
             top: 34.5em;
             left: 2em;
-            color: #08302F;
+            color: #08302f;
         }
 
         @media (max-width: 767px) {
             .footerMain {
                 top: 1.5em !important;
                 min-width: 21em;
+            }
+        }
+
+        .done {
+            text-decoration: line-through;
+            .btnForm {
+                background-color: gray;
             }
         }
     }
