@@ -12,7 +12,7 @@ function selecaoDoInput(evento) {
     const elementLi = document.createElement('li');
     elementLi.classList.add('elementActive');
 
-    const elementP = `<p>${valor}</p>`;
+    const elementP = `<p class="paragrafo">${valor}</p>`;
 
     elementLi.innerHTML = elementP;
     elementLi.appendChild(elementConcluir());

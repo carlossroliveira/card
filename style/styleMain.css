@@ -75,6 +75,7 @@
 }
 
 * body .sectionMain .btnForm {
+  margin: 0 0.5em;
   padding: 0.5em;
   background-color: #08302f;
   color: white;
@@ -117,6 +118,12 @@
     top: 1.5em !important;
     min-width: 21em;
   }
+}
+
+* body .paragrafo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 * body .done {
